@@ -33,6 +33,8 @@ Verified Mainnet flow (all receipts returned status `1`):
 
 Live app: https://yashmak-code.github.io/proofbounty-arc/
 
+Demo video: https://youtu.be/Io-e3-PeQ_Y
+
 ## Local development
 
 Requirements: Node.js 22.13 or newer and pnpm.
