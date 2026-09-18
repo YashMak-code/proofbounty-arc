@@ -83,11 +83,11 @@
 
     <dialog id="proofDialog">
       <form method="dialog" id="proofForm">
-        <div class="dialog-head"><div><p class="section-kicker">Submit evidence</p><h2 id="dialogTitle">Add proof</h2></div><button class="icon-button" value="cancel" aria-label="Close">×</button></div>
+        <div class="dialog-head"><div><p class="section-kicker">Submit evidence</p><h2 id="dialogTitle">Add proof</h2></div><button class="icon-button" value="cancel" formnovalidate aria-label="Close">×</button></div>
         <input type="hidden" id="proofBountyId" />
         <label>Public evidence URL<input id="proofUrl" type="url" placeholder="https://github.com/…/commit/…" required /></label>
         <label>Short note<textarea id="proofNote" rows="3" maxlength="180" placeholder="What was checked and what changed?" required></textarea></label>
-        <div class="dialog-actions"><button class="secondary-action" value="cancel">Cancel</button><button class="primary-action" id="proofSubmit" value="default">Hash & submit proof</button></div>
+        <div class="dialog-actions"><button class="secondary-action" value="cancel" formnovalidate>Cancel</button><button class="primary-action" id="proofSubmit" value="default">Hash & submit proof</button></div>
       </form>
     </dialog>
 
