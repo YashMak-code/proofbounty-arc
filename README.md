@@ -2,6 +2,8 @@
 
 ProofBounty is an Arc-native micro-bounty escrow for reproducible research and focused open-source work. A creator locks native USDC, a contributor submits public evidence, and the designated reviewer releases payment when the work checks out.
 
+Repository: https://github.com/YashMak-code/proofbounty-arc
+
 ## Why Arc
 
 - Native USDC is both the gas token and reward asset, so creators do not need a separate ERC-20 approval.
