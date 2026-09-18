@@ -1,0 +1,28 @@
+{
+  "name": "proofbounty",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm build:contracts && pnpm build:web",
+    "build:contracts": "hardhat build",
+    "build:web": "node scripts/build-web.mjs",
+    "deploy:arc": "hardhat run scripts/deploy.ts --network arcMainnet",
+    "preflight:arc": "hardhat run scripts/preflight.ts --network arcMainnet",
+    "typecheck": "tsc --noEmit",
+    "test": "hardhat test nodejs",
+    "test:coverage": "hardhat test nodejs --coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "latest",
+    "@nomicfoundation/hardhat-node-test-runner": "latest",
+    "@nomicfoundation/hardhat-keystore": "latest",
+    "@nomicfoundation/hardhat-viem": "latest",
+    "@nomicfoundation/hardhat-viem-assertions": "latest",
+    "@types/node": "latest",
+    "esbuild": "0.28.2",
+    "hardhat": "3.17.0",
+    "typescript": "latest",
+    "viem": "latest"
+  }
+}
