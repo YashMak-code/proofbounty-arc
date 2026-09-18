@@ -1,5 +1,7 @@
 # Arc Microgrants submission — ProofBounty
 
+Submission status: `Under Review` as of 2026-09-18.
+
 ## Project name
 
 ProofBounty
