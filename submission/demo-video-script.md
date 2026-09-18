@@ -11,23 +11,35 @@ Contract: https://explorer.arc.io/address/0x82c5319e955adb97331e1883afdb296cfe64
 | Time | Screen recording |
 |---|---|
 | 0–8s | Open the live app. Keep the Arc Mainnet badge, connected wallet, and contract `live` status visible. |
-| 8–25s | Slowly pan over the Create Bounty form: task title, public evidence requirement, reviewer, reward, and deadline. Do not create another bounty. |
-| 25–42s | Show the completed smoke-test bounty. Select `Paid` and show `1 proof`, `1 on board`, `0.00 USDC` open rewards, and the `PAID` state. |
-| 42–60s | Open the contract in Arc Explorer, then briefly show the create, proof, and payout transactions. |
-| 60–75s | Open the public GitHub repository. Show the Solidity contract, test directory, README, and deployed contract section. |
-| 75–85s | Return to the live app and finish on the ProofBounty name and Arc Mainnet badge. |
+| 8–25s | Fill the Create Bounty form and publish a 0.01 USDC bounty. Show the wallet confirmation briefly, then cut out the confirmation wait. |
+| 25–40s | Show the new open bounty, select `Submit evidence`, enter the proof, and confirm. Cut out the transaction wait. |
+| 40–55s | Show the bounty in review, select `Approve & pay`, and confirm. Cut to the final `PAID` state. |
+| 55–68s | Show the updated proof and bounty totals, zero open rewards, and the new paid task. |
+| 68–80s | Open the contract in Arc Explorer and briefly show the latest transactions. |
+| 80–90s | Open the public GitHub repository, then finish on the live app and Arc Mainnet badge. |
+
+## Demo input
+
+- Task title: `Verify ProofBounty Arc Mainnet deployment`
+- Evidence required: `Public Arc Explorer link confirming the deployed contract and transaction history.`
+- Public task brief URL: `https://github.com/YashMak-code/proofbounty-arc#arc-mainnet-deployment`
+- Reviewer address: leave blank so the connected wallet is the reviewer
+- Reward: `0.01 USDC`
+- Deadline: `2026-09-25`
+- Proof URL: `https://explorer.arc.io/address/0x82c5319e955adb97331e1883afdb296cfe646981`
+- Proof note: `Verified the deployed ProofBounty contract and its public transaction history on Arc Mainnet.`
 
 ## English voice-over
 
 ProofBounty is an Arc-native micro-bounty escrow for reproducible research and focused open-source work.
 
-A creator publishes a focused task and locks native USDC directly in the smart contract. A contributor submits a public evidence link with a cryptographic fingerprint, and the designated reviewer releases payment when the work checks out.
+I am creating a new task in the live application on Arc Mainnet, chain 5042. I define the required public evidence, use the connected wallet as reviewer for this demonstration, and lock a 0.01 USDC reward.
 
-This is the live application running on Arc Mainnet, chain 5042. Our completed smoke test shows one funded bounty, one verified proof, and the final paid state. The full flow was executed on-chain with 0.01 USDC: create and fund, submit proof, then approve and pay.
+On Arc, native USDC funds the reward and pays the network fee, so there is no separate token approval. Once the transaction finalizes, the bounty appears open in the shared ProofBounty contract.
 
-The deployed contract and every transaction are publicly verifiable in Arc Explorer. The source code is public, with fourteen contract tests and one hundred percent line and statement coverage.
+I now submit a public evidence URL. ProofBounty records the link and its cryptographic fingerprint on-chain. As the designated reviewer, I approve the evidence, and the contract marks the bounty paid and transfers the reward to the contributor.
 
-ProofBounty makes small, verifiable work auditable and payable with one Arc-native asset.
+The completed flow and every transaction are publicly verifiable in Arc Explorer. The source code is public, with fourteen contract tests and one hundred percent line and statement coverage. ProofBounty makes small, verifiable work auditable and payable with one Arc-native asset.
 
 ## Recording notes
 
@@ -36,4 +48,6 @@ ProofBounty makes small, verifiable work auditable and payable with one Arc-nati
 - Do not show seed phrases, private keys, passwords, browser history, or wallet settings.
 - Wallet addresses and transaction hashes are public, but crop or blur the balance if preferred.
 - Add English subtitles even when using English AI narration.
+- Record the full wallet confirmations, but shorten each confirmation wait to about one second during editing.
+- Do not show or use the separate contract deployment helper in this video.
 - Upload to YouTube as `Unlisted`, then test the link in a logged-out/private browser window.
