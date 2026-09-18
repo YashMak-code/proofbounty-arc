@@ -31,7 +31,7 @@ Verified Mainnet flow (all receipts returned status `1`):
 - Submit public proof: `0x30f889be6970c5e66740365189e06640935365340f5c095fc8844cb9d206628c`
 - Approve and pay: `0x9f903c422574309eebaddd292d1d6571e9c84db8b4513929e4d52cf46acfc607`
 
-Private working preview: https://proofbounty-arc.a774555798.chatgpt.site
+Live app: https://yashmak-code.github.io/proofbounty-arc/
 
 ## Local development
 
